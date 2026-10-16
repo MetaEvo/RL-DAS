@@ -29,6 +29,14 @@ The saved models are in /save_policy_PPO or /save_policy_DQN with runtime file n
 For more adjustable configurations, please refer to [Parameter setting](/#Parameter-setting).
 
 
+## Pretrained Models
+
+We provide the RL-DAS models pretrained for 10D problems (C1 - C11) in 10DModels, you can modify the *state_dict* parameter to use these models. For example, if you want to load the model for C2, in `Testing.py` you can use:
+```python
+state_dict = "10DModels/C2.pth"
+```
+
+
 ## Citation
 If you are using RL-DAS, we would appreciate a citation. You can use the following bibtex:
 ```
